@@ -14,5 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'saluto' => 'Hello World',
+        'titolo' => 'Lezione di',
+        'date' => '10/06/2022',
+        'professori' => [
+            'Mauro Famoso',
+            'Anna Pasqua'
+        ],
+        'students' => [
+            'Laura Verdi',
+            'Carlo Maroni',
+            'Marco Rossi',
+            'Paolo Gialli',
+            'Marta Rosa',
+            'Giacomo Caro',
+            'Lucia Bella',
+            'Viorel Pignolo',
+            'Lisa Tasti',
+            'Irina Flora'
+        ]
+    ];
+    return view('home', $data);
 });
