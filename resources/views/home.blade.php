@@ -20,7 +20,7 @@
     <header class="border-b-gray-2 border-b-2">
         <section>
             <div class="container flex between">
-                <h1 class="py-3 fs-7"> {{ $saluto }} </h1>
+                <a href="/hello" class="py-3 fs-7 black decoration-none bold blue-5-H transition-all duration-3 border-r border-l px-3 border-gray-2-H border-white shadow-b-3-light-H"> {{ $saluto }} </a>
                 <h1 class="py-3 fs-7">{{ $titolo }} <span class="violet-7">PHP</span></h1>
             </div>
         </section>
@@ -37,7 +37,7 @@
 
         <section class="bg-gray-1 py-6">
             <div class="container">
-                <h3 class="border-b">Professori per la presenazione della lezione</h3>
+                <h3 class="border-b">Professori per la presentazione della lezione</h3>
 
                 <ul class="list-style-none">
                     @forelse ($professori as $item)

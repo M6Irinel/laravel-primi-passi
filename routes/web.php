@@ -37,3 +37,10 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 });
+
+Route::get('/hello', function () {
+    $data = [
+        'saluto' => 'Hello World',
+    ];
+    return view('hello-world', $data);
+});
